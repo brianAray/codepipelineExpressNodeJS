@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
             </html>`);
 })
 
+app.get('/hello', (req, res) => {
+    res.send("Hello!");
+})
+
 app.listen(port, () => {
     console.log(`server is listening on port ${port}`)
 });
