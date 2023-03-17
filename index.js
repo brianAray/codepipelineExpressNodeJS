@@ -1,0 +1,18 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+    res.send(`<html>
+            <body>
+                <div style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%)">
+                    <img src="https://picsum.photos/400/400?random=1">
+                </div>
+            </body>
+            </html>`);
+})
+
+app.listen(port, () => {
+    console.log(`server is listening on port ${port}`)
+});
+
